@@ -1,11 +1,6 @@
-// Bootstrap
-import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+import styles from "./index.css";
 
-// Style
-import './scss/index.scss';
+const num = [1,2,3];
+let codenext = () => console.log(...num);
 
-// JS
-import Person from './js/Person';
-
-const person = new Person('John', 35);
-console.log(person.info());
+console.log(codenext())
