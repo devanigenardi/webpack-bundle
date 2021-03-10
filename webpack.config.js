@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
     module: {
@@ -25,6 +26,10 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader"]
+            },
+            {
+                test: /\.(jpg?g|png|svg)$/i,
+                use: ["file-loader?name=assets/[name].[ext]"]
             }
         ]
     },
@@ -33,6 +38,7 @@ module.exports = {
             template: './src/index.html',
             filename: './index.html'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new FaviconsWebpackPlugin('./src/assets/favicon.png')
     ]
 }
