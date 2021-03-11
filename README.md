@@ -1,4 +1,4 @@
-## webpack-starter
+# Webpack-starter
 
 ## Install the app:
 Run command: npm install
