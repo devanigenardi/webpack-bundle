@@ -9,4 +9,4 @@ Run command: npm start
 ## Build dist folder:
 Run command: npm run build
 
-[Port](http://localhost:3000/)
+Port: localhost:3000
