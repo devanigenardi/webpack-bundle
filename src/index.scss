@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+$redColor: red;
+
+html {
+    font-size: 16px;
+    background-color: white;
+    color: $redColor;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
